@@ -1,0 +1,87 @@
+[
+    {
+      "name": "...Ready For It?",
+      "genre": "Pop",
+      "artist": "Taylor Swift",
+      "length": 208,
+      "cover": "images/reputation.jpg"
+    },
+    {
+      "name": "A Moment Apart",
+      "genre": "Electronic",
+      "artist": "ODESZA",
+      "length": 234,
+      "cover": "images/a-moment-apart.jpg"
+    },
+    {
+      "name": "baseball",
+      "genre": "Indie",
+      "artist": "Hippo Campus",
+      "length": 198,
+      "cover": "images/warm-glow.jpg"
+    },
+    {
+      "name": "Bloom",
+      "genre": "Electronic",
+      "artist": "ODESZA",
+      "length": 195,
+      "cover": "images/in-return.jpg"
+    },
+    {
+      "name": "Epitaph",
+      "genre": "Indie",
+      "artist": "Hippo Campus",
+      "length": 255,
+      "cover": "images/landmark.jpg"
+    },
+    {
+      "name": "Getaway Car",
+      "genre": "Pop",
+      "artist": "Taylor Swift",
+      "length": 233,
+      "cover": "images/reputation.jpg"
+    },
+    {
+      "name": "Karma",
+      "genre": "Pop",
+      "artist": "Taylor Swift",
+      "length": 204,
+      "cover": "images/midnight.jpg"
+    },
+    {
+      "name": "Mastermind",
+      "genre": "Pop",
+      "artist": "Taylor Swift",
+      "length": 191,
+      "cover": "images/midnight.jpg"
+    },
+    {
+      "name": "Meridian",
+      "genre": "Electronic",
+      "artist": "ODESZA",
+      "length": 235,
+      "cover": "images/a-moment-apart.jpg"
+    },
+    {
+      "name": "my boy",
+      "genre": "Pop",
+      "artist": "Billie Eilish",
+      "length": 170,
+      "cover": "images/dont-smile-at-me.jpg"
+    },
+    {
+      "name": "watch",
+      "genre": "Pop",
+      "artist": "Billie Eilish",
+      "length": 177,
+      "cover": "images/dont-smile-at-me.jpg"
+    },
+    {
+      "name": "You're On Your Own, Kid",
+      "genre": "Pop",
+      "artist": "Taylor Swift",
+      "length": 194,
+      "cover": "images/midnight.jpg"
+    }
+  ]
+  

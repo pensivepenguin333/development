@@ -1,0 +1,22 @@
+.Options {
+    background-color: #EEF1FF;
+    text-align: left;
+}
+
+.liked {
+    background-color: white;
+    border: 2px solid rgb(76, 76, 76);
+    /* border: none; */
+    font-size: 16px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+}
+
+.reset {
+    background-color: white;
+    border: 2px solid rgb(76, 76, 76);
+    /* border: none; */
+    font-size: 16px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+}

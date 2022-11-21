@@ -1,0 +1,16 @@
+.Body {
+    text-align: center;
+  }
+  
+  .songs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .list {
+    float: left;
+  }
+  
+  .options {
+    float: left;
+  }

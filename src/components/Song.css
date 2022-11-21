@@ -1,0 +1,54 @@
+.Song {
+    border: 3px solid #B1B2FF;
+    border-radius: 10px;
+    margin: 50px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background-color: #EEF1FF;
+}
+
+.Song img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.length {
+    position: absolute;
+    bottom: 0;
+    margin: 0px 0px 10px 10px;
+    font-size: 16px;
+}
+
+.info {
+    position: absolute;
+    left: 0;
+    text-align: left;
+    margin: 10px 0px 0px 10px;
+}
+
+.name {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.artist {
+    font-size: 16px;
+}
+
+.favorite {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0px 10px 10px 0px;
+    font-size: 20px;
+}
+
+.icon {
+    transform: scale(1.5);
+    color: #B1B2FF;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
