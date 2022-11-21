@@ -1,16 +1,9 @@
 .App {
-  text-align: center;
-}
-
-.songs {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  /* margin: auto; */
 }
 
-.list {
-  float: left;
-}
 
-.options {
-  float: left;
-}

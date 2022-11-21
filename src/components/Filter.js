@@ -7,9 +7,9 @@ export default function Filter(props) {
     const curr = props.curr;
     let icon;
     if (props.type.includes(curr)) {
-        icon = <CheckBoxIcon onClick={() => {props.change(curr)}} />
+        icon = <CheckBoxIcon className="checkbox" onClick={() => {props.change(curr)}} />
     } else {
-        icon = <CheckBoxOutlineBlankIcon onClick={() => {props.change(curr)}} />
+        icon = <CheckBoxOutlineBlankIcon className="checkbox" onClick={() => {props.change(curr)}} />
     }
 
     return  (

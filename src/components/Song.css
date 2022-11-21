@@ -1,15 +1,15 @@
 .Song {
     border: 3px solid #B1B2FF;
     border-radius: 10px;
-    margin: 50px;
-    width: 300px;
+    /* margin: 50px; */
+    width: 295px;
     height: 400px;
     position: relative;
-    background-color: #EEF1FF;
+    margin: 20px 40px 0px 40px;
 }
 
 .Song img {
-    width: 300px;
+    width: 295px;
     border-radius: 10px;
 }
 

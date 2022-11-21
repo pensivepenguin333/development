@@ -40,38 +40,48 @@ export default function Options(props) {
                 GENRE
             </div>
 
-            {genres.map((currGenre, index) => ( 
-            <Filter curr={currGenre} type={props.genre} change={props.changeGenre}/>
-            ))}
+            <div className="selection">
+                {genres.map((currGenre, index) => ( 
+                <Filter curr={currGenre} type={props.genre} change={props.changeGenre}/>
+                ))}
+            </div>
 
             <div className="title">
                 ARTIST
             </div>
 
-            {artists.map((currArtist, index) => ( 
-            <Filter curr={currArtist} type={props.artist} change={props.changeArtist}/>
-            ))}
+            <div className="selection">
+                {artists.map((currArtist, index) => ( 
+                <Filter curr={currArtist} type={props.artist} change={props.changeArtist}/>
+                ))}
+            </div>
+
             <div className="section">
                 Sort
             </div>
-            {sorting.map((currSort, index) => ( 
-            <Sort currSort={currSort} sort={props.sort} changeSort={props.changeSort}/>
-            ))}
 
-            <div>
-                Favorites Duration: {total}
+            <div className="selection">
+                {sorting.map((currSort, index) => ( 
+                <Sort currSort={currSort} sort={props.sort} changeSort={props.changeSort}/>
+                ))}
+            </div>
+
+            <div className="favorites">
                 <button className="liked" onClick={() => {props.changeLiked()}}>
                     {buttonText}
                 </button>
+                (Duration: {total})
             </div>
 
-            <button className="reset" onClick={() => {
-                props.sortDisplay(songData, "A-Z: Song Name")
-                props.updateGenre([])
-                props.updateArtist([])
-                props.updateSort("A-Z: Song Name")}}>
-                Reset Filters/Sort
-            </button>
+            <div className="resetting">
+                <button className="reset" onClick={() => {
+                    props.sortDisplay(songData, "A-Z: Song Name")
+                    props.updateGenre([])
+                    props.updateArtist([])
+                    props.updateSort("A-Z: Song Name")}}>
+                    Reset Filters/Sort
+                </button>
+            </div>
         </div>
     )
 }

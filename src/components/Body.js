@@ -22,7 +22,7 @@ export default function Body() {
     // updates the state of liked songs
     const changeFav = (song) => {
         if (fav.includes(song)) {
-            updateFav(fav.filter(s => s !== song.name))
+            updateFav(fav.filter(s => s.name !== song.name))
         } else {
             updateFav([...fav, song])
         }
