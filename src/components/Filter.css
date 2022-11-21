@@ -7,3 +7,7 @@
 .checkbox {
     color: #B1B2FF;
 }
+
+.checkbox:hover {
+    cursor: pointer;
+}

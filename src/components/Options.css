@@ -16,6 +16,10 @@
     margin-right: 5px;
 }
 
+.liked:hover {
+    cursor: pointer;
+} 
+
 .reset {
     background-color: #EEF1FF;
     border: 2px solid #B1B2FF;
@@ -23,6 +27,10 @@
     padding: 5px 15px 5px 15px;
     border-radius: 10px;
 }
+
+.reset:hover {
+    cursor: pointer;
+} 
 
 .section {
     font-size: 23px;
