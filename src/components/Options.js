@@ -75,7 +75,11 @@ export default function Options(props) {
 
             <div className="resetting">
                 <button className="reset" onClick={() => {
-                    props.sortDisplay(songData, "A-Z: Song Name")
+                    if (props.liked) {
+                        props.sortDisplay(props.fav, "A-Z: Song Name")
+                    } else {
+                        props.sortDisplay(songData, "A-Z: Song Name")
+                    }
                     props.updateGenre([])
                     props.updateArtist([])
                     props.updateSort("A-Z: Song Name")}}>

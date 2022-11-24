@@ -5,6 +5,7 @@
     height: 400px;
     position: relative;
     margin: 20px 40px 0px 40px;
+    /* box-shadow: 0 3px 8px rgb(0 0 0 / 0.8); */
 }
 
 .Song img {

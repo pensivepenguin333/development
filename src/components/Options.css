@@ -5,6 +5,7 @@
     border-radius: 10px;
     border: 3px solid #B1B2FF;
     margin: 20px 0px 0px 40px;
+    /* box-shadow: 0 3px 8px rgb(0 0 0 / 0.8); */
 }
 
 .liked {

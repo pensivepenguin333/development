@@ -35,7 +35,7 @@ export default function Body() {
             removeFilter(type, null)
         } else {
             updateGenre([...genre, type])
-            addFilter(type, null)
+            addFilter(type, null, false)
         }
     }
 
@@ -46,7 +46,7 @@ export default function Body() {
             removeFilter(null, type)
         } else {
             updateArtist([...artist, type])
-            addFilter(null, type)
+            addFilter(null, type, false)
         }
     }
 
@@ -57,11 +57,17 @@ export default function Body() {
     }
 
     // checking a new filter
-    const addFilter = (addG, addA) => {
+    const addFilter = (addG, addA, changing) => {
+        // let filtered = songData;
+
         let filtered = songData;
 
+        if ((liked && !changing) || (!liked && changing)) {
+            filtered = fav;
+        }
+
         if (addA !== null || artist.length !== 0) {
-            filtered = songData.filter(x => artist.includes(x.artist) || x.artist === addA)
+            filtered = filtered.filter(x => artist.includes(x.artist) || x.artist === addA)
         }
 
         if (addG !== null || genre.length !== 0) {
@@ -74,19 +80,39 @@ export default function Body() {
     const removeFilter = (remG, remA) => {
         // removing the only filter that existed, equivalent to resetting
         if (artist.length + genre.length === 1) {
-            sortDisplay(songData, sort)
+            // on the favorites page
+            if (liked) {
+                sortDisplay(fav, sort)
+            } else {
+                sortDisplay(songData, sort)
+            }
         } else {
             let filtered = display;
+
+            if (liked) {
+                filtered = fav
+            }
+
             if (remA !== null) {
                 if (artist.length === 1) {
-                    filtered = songData.filter(x => genre.includes(x.genre))
+                    if (!liked) {
+                        filtered = songData
+                    }
+                    filtered = filtered.filter(x => genre.includes(x.genre))
                 } else {
                     filtered = filtered.filter(x => artist.includes(x.artist) && x.artist !== remA)
                 }
             }
     
             if (remG !== null) {
-                filtered = filtered.filter(x => genre.includes(x.genre) && x.genre !== remG)
+                if (genre.length === 1) {
+                    if (!liked) {
+                        filtered = songData
+                    }
+                    filtered = filtered.filter(x => artist.includes(x.artist))
+                } else {
+                    filtered = filtered.filter(x => genre.includes(x.genre) && x.genre !== remG)
+                }
             }
             sortDisplay(filtered, sort)
         }
@@ -109,10 +135,13 @@ export default function Body() {
     const changeLiked = () => {
         // selected "browse songs"
         if (liked) {
-            addFilter(null, null)
+            // addFilter(null, null)
+            sortDisplay(songData, sort)
+            addFilter(null, null, true)
         // selected "view liked"
         } else {
             sortDisplay(fav, sort)
+            addFilter(null, null, true)
         }
         updateLiked(!liked)
     }
