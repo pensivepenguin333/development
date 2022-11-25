@@ -163,12 +163,6 @@ export default function Body() {
                 ))}
             </div>
         </div>
-
-        {/* <div>
-        {fav.map((s, index) => (
-            <p>{s}</p>
-        ))}
-        </div> */}
     </div>
     );
 }

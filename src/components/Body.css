@@ -1,10 +1,6 @@
 .Body {
-    /* text-align: center; */
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
     flex-wrap: wrap;
-    /* justify-content: center; */
     max-width: 2500px;
   }
   
@@ -14,23 +10,9 @@
   }
   
 .list {
-    /* float: left; */
-    /* display: inline-block; */
     width: 70%;
 }
   
 .options {
-    /* float: left; */
-    /* display: inline-block; */
-    /* width: 30%;
-    max-width: 320px;
-    min-width: 320px; */
     width: 340px;
-}
-
-@media (min-width: 1134px) {
-
-  .Body {
-    /* justify-content: center; */
-  }
 }
