@@ -58,8 +58,6 @@ export default function Body() {
 
     // checking a new filter
     const addFilter = (addG, addA, changing) => {
-        // let filtered = songData;
-
         let filtered = songData;
 
         if ((liked && !changing) || (!liked && changing)) {
@@ -88,7 +86,6 @@ export default function Body() {
             }
         } else {
             let filtered = display;
-
             if (liked) {
                 filtered = fav
             }

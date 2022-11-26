@@ -37,6 +37,19 @@ resetting and viewing favorites. Within the `Options` component, `Filter` and
 with the option name next to it. 
 
 ### How Data is Passed Down Through Components
+Data is passed through components through props, including the various states 
+and functions that change those states. All of the important information is 
+contained in the `Body` component and gets passed to the two main components:
+`Options` and `Song`. The `Song` component gets the current song being 
+created, a list of favorite songs, and the function used to modify this list 
+of favorite songs. The `Options` component gets all the information pertaining 
+to the filters and sort method selected, the "View Favorites" button, and the 
+means to change all of these. Once the `Options` component has all of this 
+data, it is then able to pass the information needed for the `Filter` and `Sort`
+components, as they need to be able to update the state of what is currently 
+being selected. This is done by passing in the current state of the 
+genres/artists selected/the sort option selected, and the functions to modify 
+these states.
 
 ### How the User Triggers State Changes
 The user can trigger state changes in many different ways. For example, if the
